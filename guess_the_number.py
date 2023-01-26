@@ -45,8 +45,19 @@ def main():
             break
         else:
             guess_count+=1
+    
+    oridnals = 'th'
+    if ((guess_count + 1) == 1): 
+        oridnals = 'st'
+    elif ((guess_count + 1) == 2):
+        oridnals = 'nd'
+    elif ((guess_count + 1) == 3):
+        oridnals = 'rd'
+    else:
+        oridnals = oridnals
+    
+    print(f'You got it right on {guess_count+1}{oridnals} guess')
     print('Thanks for playing the game!')
-    print(f'You took {guess_count} guesses')
 
 
 if __name__ == '__main__':
