@@ -34,7 +34,7 @@ def main():
 
     (low, high) = configure_range()
     secret = generate_secret(low, high)
-    guess_count = 0
+    guess_count = 0 # to store the number of attempts to guess
 
     while True:
         guess = get_guess()
